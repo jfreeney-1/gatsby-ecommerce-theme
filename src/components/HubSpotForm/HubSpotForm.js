@@ -1,6 +1,10 @@
 import React, {useEffect} from "react";
 
-const HubSpotForm = ({ portalIdInput, formIdInput}) => {
+const HubSpotForm = React.forwardRef((props) => {
+    const {portalIdInput,
+        formIdInput
+        
+      } = props;
     useEffect(() => {
         const script = document.createElement('script');
         script.src='https://js.hsforms.net/forms/v2.js';
@@ -11,8 +15,8 @@ const HubSpotForm = ({ portalIdInput, formIdInput}) => {
             if (window.hbspt) {
                 // @TS-ignore
                 window.hbspt.forms.create({
-                    portalId: portalIdInput,
-                    formId: formIdInput,
+                    portalId: {portalIdInput},
+                    formId: {formIdInput},
                     target: '#hubspotForm'
                 })
             }
@@ -25,6 +29,6 @@ const HubSpotForm = ({ portalIdInput, formIdInput}) => {
         </div>
     );
 
-}
+});
 
 export default HubSpotForm;
