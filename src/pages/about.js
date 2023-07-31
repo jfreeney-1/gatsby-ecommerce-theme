@@ -44,11 +44,11 @@ const AboutPage = (props) => {
           >
             Sustainability
           </ThemeLink>
-         {/* <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
-          
-          </HubSpotForm> */}
+         
         </div>
-
+        <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
+          
+          </HubSpotForm>
         <Container size={'large'} spacing={'min'}>
         
           <div className={styles.detailContainer} ref={historyRef}>
