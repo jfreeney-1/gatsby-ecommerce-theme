@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import Container from '../components/Container';
 import Hero from '../components/Hero';
-import HubSpotForm from '../components/HubSpotForm';
+import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import ThemeLink from '../components/ThemeLink';
 import Layout from '../components/Layout/Layout';
 
