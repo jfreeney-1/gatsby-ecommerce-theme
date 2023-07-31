@@ -48,14 +48,15 @@ const AboutPage = (props) => {
         </div>
      
         <Container size={'large'} spacing={'min'}>
-        <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
-          
-          </HubSpotForm>
+       
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
               Founded in 1860, Sydney is an innovative British brand with a
               contemporary edge. We make timeless everyday luxury clothing.
             </p>
+            <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
+          
+          </HubSpotForm>
             <br />
             <br />
             <p>
