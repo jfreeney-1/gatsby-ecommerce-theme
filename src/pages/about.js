@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 
 import Container from '../components/Container';
 import Hero from '../components/Hero';
+//import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import ThemeLink from '../components/ThemeLink';
 import Layout from '../components/Layout/Layout';
 
@@ -43,14 +44,46 @@ const AboutPage = (props) => {
           >
             Sustainability
           </ThemeLink>
+         
         </div>
-
+     
         <Container size={'large'} spacing={'min'}>
+       
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
               Founded in 1860, Sydney is an innovative British brand with a
               contemporary edge. We make timeless everyday luxury clothing.
             </p>
+
+<div>
+
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+</div>
+
+
+
+
+
             <br />
             <br />
             <p>
@@ -61,7 +94,7 @@ const AboutPage = (props) => {
             </p>
           </div>
         </Container>
-
+       
         <div className={styles.imageContainer}>
           <img alt={'shirt brand'} src={'/about1.png'}></img>
         </div>
@@ -92,7 +125,7 @@ const AboutPage = (props) => {
             <h3>Sustainability</h3>
             <div id={'#sustainability'} ref={sustainabilityRef}>
               <p>
-                Our founder, Thomas Hill, had both an eye for quality and a
+                TESTINTINTINTINITNTINTINTITNITNTtest Our founder, Thomas Hill, had both an eye for quality and a
                 desire to innovate. As well as using the finest fibres such as
                 Sea Island cotton, cashmere and silk, he invented his own
                 fabrics. Sunspel continues this commitment to innovation today
