@@ -55,9 +55,9 @@ const AboutPage = (props) => {
               contemporary edge. We make timeless everyday luxury clothing.
             </p>
 
+<div>
 
-
-            <form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
@@ -77,6 +77,9 @@ const AboutPage = (props) => {
     <button type="submit">Send</button>
   </p>
 </form>
+
+</div>
+
 
 
 
