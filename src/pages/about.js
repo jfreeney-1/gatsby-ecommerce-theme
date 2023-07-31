@@ -61,7 +61,13 @@ const AboutPage = (props) => {
             </p>
           </div>
         </Container>
-
+        <HubspotForm
+                portalId='141763978'
+                formId='8b540135-a2d1-40fd-ae21-f850066647d0'
+                onSubmit={() => console.log('Submit!')}
+                onReady={(form) => console.log('Form ready!')}
+                loading={<div>Loading...</div>}
+            />
         <div className={styles.imageContainer}>
           <img alt={'shirt brand'} src={'/about1.png'}></img>
         </div>
