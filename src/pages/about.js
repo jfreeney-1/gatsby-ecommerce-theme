@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import HubSpotForm from '../components/HubSpotForm';
+
 import Container from '../components/Container';
 import Hero from '../components/Hero';
+import HubSpotForm from '../components/HubSpotForm';
 import ThemeLink from '../components/ThemeLink';
 import Layout from '../components/Layout/Layout';
 
@@ -43,10 +44,11 @@ const AboutPage = (props) => {
           >
             Sustainability
           </ThemeLink>
-        </div>
-        <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
+          <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
           
-        </HubSpotForm>
+          </HubSpotForm>
+        </div>
+
         <Container size={'large'} spacing={'min'}>
         
           <div className={styles.detailContainer} ref={historyRef}>
