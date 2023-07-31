@@ -44,9 +44,11 @@ const AboutPage = (props) => {
             Sustainability
           </ThemeLink>
         </div>
-
+        <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
+          
+        </HubSpotForm>
         <Container size={'large'} spacing={'min'}>
-        <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}></HubSpotForm>
+        
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
               Founded in 1860, Sydney is an innovative British brand with a
