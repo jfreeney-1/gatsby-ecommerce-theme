@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import Container from '../components/Container';
 import Hero from '../components/Hero';
-import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
+//import HubSpotForm from '../components/HubSpotForm/HubSpotForm';
 import ThemeLink from '../components/ThemeLink';
 import Layout from '../components/Layout/Layout';
 
@@ -54,9 +54,33 @@ const AboutPage = (props) => {
               Founded in 1860, Sydney is an innovative British brand with a
               contemporary edge. We make timeless everyday luxury clothing.
             </p>
-            <HubSpotForm portalIdInput={'141763978'} formIdInput={'8b540135-a2d1-40fd-ae21-f850066647d0'}>
-          
-          </HubSpotForm>
+
+
+
+            <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+
+
             <br />
             <br />
             <p>
